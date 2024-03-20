@@ -50,8 +50,5 @@ Contributions are welcome! If you'd like to contribute to Vibescape, please foll
 3. Commit your changes and push to your fork.
 4. Submit a pull request with a detailed description of your changes.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
