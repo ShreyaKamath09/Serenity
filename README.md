@@ -1,55 +1,37 @@
-
-Vibescape is an emotion music recommender system that provides a unique and personalized music streaming experience. It utilizes facial emotion detection to analyze the user's emotions and recommend songs that match their mood. The application supports streaming from popular platforms such as Spotify, SoundCloud, and YouTube.
-
-**Live Demo** <a href="https://vibescape.streamlit.app/">**here**</a>
+![image](https://github.com/Mary-ams/Serenity/blob/main/logo1.png?raw=true)
+## Serenity is an emotion music recommender system that provides a unique and personalized music streaming experience. It utilizes facial emotion detection and a quiz to analyze the user's emotions and recommend songs that match their mood. The application supports streaming from popular platforms such as Spotify, SoundCloud, and YouTube.
 
 ## Features
-- **Emotion-based Music Recommendation:** Vibescape uses facial emotion detection to analyze the user's emotions and recommends songs that match their mood.
+- **Emotion-based Music Recommendation:** Serenity uses facial emotion detection to analyze the user's emotions and recommends songs that match their mood.
 - **Streaming from Multiple Platforms:** Users can stream music from their favorite platforms including Spotify, SoundCloud, and YouTube.
 - **Personalized Playlists:** The application creates personalized playlists based on the user's emotions and preferences.
-- **User-Friendly Interface:** Vibescape offers an intuitive and easy-to-use interface for a seamless music streaming experience.
+- **User-Friendly Interface:** Serenity offers an intuitive and easy-to-use interface for a seamless music streaming experience.
 
-## Installation and Setup
+## HomePage
+![image](https://github.com/Mary-ams/Serenity/assets/102135323/9d2e30f8-2610-4c03-9cdb-6edf2140c472)
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/NebulaTris/vibescape.git
-   cd vibescape
-   ```
+## SoundCloud Page
+![image](https://github.com/Mary-ams/Serenity/assets/102135323/62cb9d19-ccda-4f26-9233-627d8cecfc81)
 
-2. Install the required dependencies using `pip`:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## Spotify Page
+![image](https://github.com/Mary-ams/Serenity/assets/102135323/dca68d6e-c35b-442f-a71c-2c94861b04f4)
 
-## Usage
+## YouTube Page
+![image](https://github.com/Mary-ams/Serenity/assets/102135323/8757c392-d479-4d65-b87d-6d82fde71ead)
 
-1. Run the Streamlit app:
-   ```bash
-   python -m streamlit run 1_🎵_Homepage.py
-   ```
+## Analyzer for Songs
+![image](https://github.com/Mary-ams/Serenity/assets/102135323/5179e0e1-725f-469c-b0c2-ae300bdd61a2)
+![image](https://github.com/Mary-ams/Serenity/assets/102135323/af1383ed-6e2e-46eb-8daf-5a4f9175edaa)
 
-2. Open your web browser and go to `http://localhost:8501` to access the Vibescape application.
+
 
 ## Emotion Detection
 
-Vibescape uses facial emotion detection to analyze the user's emotions. Make sure your device has a camera enabled to utilize this feature effectively.
+Serenity uses facial emotion detection and a quiz to analyze the user's emotions. Make sure your device has a camera enabled to utilize this feature effectively.
 
 ## Supported Platforms
 
-Vibescape supports music streaming from the following platforms:
+Serenity supports music streaming from the following platforms:
 - Spotify
 - SoundCloud
 - YouTube
-
-## Contributing
-
-Contributions are welcome! If you'd like to contribute to Vibescape, please follow these steps:
-1. Fork the repository.
-2. Create a new branch for your feature/bugfix.
-3. Commit your changes and push to your fork.
-4. Submit a pull request with a detailed description of your changes.
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
-

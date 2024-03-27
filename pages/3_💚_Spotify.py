@@ -72,11 +72,7 @@ div.stButton > button:active::after {
 }
 
 [data-testid="stAppViewContainer"] {
-background-image: url("https://images.unsplash.com/photo-1581084324492-c8076f130f86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
-background-size: cover;
-background-position: top left;
-background-repeat: no-repeat;
-background-attachment: local;
+background: linear-gradient(120deg, #1db954, #191414);
 }
 
 [data-testid="stSidebar"] > div:first-child {
@@ -95,16 +91,16 @@ right: 2rem;
 }
 </style>
 """
-add_logo("https://github.com/NebulaTris/vibescape/blob/main/logo.png?raw=true")
+add_logo("https://github.com/NebulaTris/Serenity/blob/main/logo.png?raw=true")
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
-st.title("Vibescape-Spotify 💚")
-st.markdown(''':green[**Note : It is recommended that you scan your face , for Vibescape to groove with you!**]''')
+st.title("Serenity-Spotify ")
+st.markdown(''':white[**Note : It is recommended that you scan your face , for Serenity to groove with you!**]''')
 st.sidebar.success("Spotify has been selected as your music player.")
-st.sidebar.text("Developed by Shambhavi")
+
 
 if "run" not in st.session_state:
-    st.write("**Looks like you have skipped the face scan on the homepage and came here, just for music, just choose your vibe manually for Vibescape to groove with you!**")
+    st.write("**Looks like you have skipped the face scan on the homepage and came here, just for music, just choose your vibe manually for Serenity to groove with you!**")
     option = st.selectbox(
     'What''s your vibe today?',
     ('Happy', 'Sad', 'Angry','Fear','Surprise','Neutral'))
