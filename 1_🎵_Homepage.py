@@ -19,12 +19,32 @@ from keras.models import load_model
 
 
 st.set_page_config(
-    page_title="Vibescape",
+    page_title="Serenity",
     page_icon="🎵",
 )
 
 page_bg_img = """
 <style>
+
+
+
+[data-testid="stSelectbox"] .stSelectbox-placeholder {
+    border-radius: 400px; /* Adjust the border-radius to change the shape */
+    border: 2px solid #7B41F0; /* Border color */
+    padding: 10px; /* Padding */
+    font-size: 16px; /* Font size */
+    background-color: #ffffff; /* Background color */
+    color: #000000; /* Text color */
+}
+
+[data-testid="stSelectbox"] .stSelectbox-options {
+    border-radius: 15px; /* Adjust the border-radius to match the placeholder */
+    border: 2px solid #7B41F0; /* Border color */
+    font-size: 16px; /* Font size */
+    background-color: #ffffff; /* Background color */
+    color: #000000; /* Text color */
+    margin-top: 5px; /* Adjust the margin */
+}
 
 div.stButton > button:first-child {
     all: unset;
@@ -95,11 +115,13 @@ div.stButton > button:active::after {
 
 
 [data-testid="stAppViewContainer"] {
-background-image: url("https://images.unsplash.com/photo-1613327986042-63d4425a1a5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+# background-image: url("https://images.unsplash.com/photo-1613327986042-63d4425a1a5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
 background-size: cover;
 background-position: top left;
 background-repeat: no-repeat;
 background-attachment: local;
+ background-color: #9771EB;
+color: #ffffff; 
 }
 
 [data-testid="stSidebar"] > div:first-child {
@@ -116,20 +138,22 @@ background: rgba(0,0,0,0);
 [data-testid="stToolbar"] {
 right: 2rem;
 }
+
+[data-testid="stHeader"] h1 {
+    font-family: 'Indie Flower', cursive;
+}
+
 </style>
 """
-add_logo("https://github.com/NebulaTris/vibescape/blob/main/logo.png?raw=true")
+add_logo("logo1.png")
 st.markdown(page_bg_img, unsafe_allow_html=True)
-st.title("Vibescape 🎉🎶")
-st.sidebar.success("Select a page below.")
-st.sidebar.text("Developed by Shambhavi")
+st.title("SERENITY ")
+# st.sidebar.success("Select a page below.")
+# st.sidebar.text("Developed by Shambhavi")
 
-st.markdown("**Hey there, emotion explorer! Are you ready for a wild ride through the rollercoaster of feelings?** 🎢🎵")
-st.markdown("**Welcome to Vibescape, where our snazzy AI meets your wacky emotional world head-on! We've got our virtual goggles on (nope, not really, but it sounds cool** 😎 **) to analyze your emotions using a webcam. And what do we do with all those emotions, you ask? We turn them into the most toe-tapping, heartwarming, and occasionally hilarious music playlists you've ever heard!** 🕺💃")
-st.markdown("**You've heard of Spotify, SoundCloud, and YouTube, right? Well, hold onto your hats because Vibescape combines these musical behemoths into one epic entertainment extravaganza! Now you can dive into your favorite streaming services with a twist — they'll be serving up songs based on your mood!** 🎶")
-st.markdown("**Feeling like a happy-go-lucky panda today? We've got a playlist for that! Or perhaps you've got the moody blues? No worries, Vibescape has your back. Our AI wizardry detects your vibes and serves up the tunes that match your moment.** 🐼🎉")
-st.markdown("**So, get ready for a whirlwind of emotions and music. Vibescape is here to turn your webcam into a mood ring, your screen into a dance floor, and your heart into a DJ booth. What's next? Well, that's entirely up to you and your ever-changing feelings!**")
-st.markdown("**So, strap in** 🚀 **, hit that webcam** 📷 **, and let the musical journey begin! Vibescape is your ticket to a rollercoaster of emotions, all set to your favorite tunes.** 🎢🎵")
+st.markdown("**Welcome to Serenity!** We're here to make your music experience truly personal. Our clever AI analyzes your emotions through your webcam and crafts playlists that match your mood perfectly.")
+st.markdown("**It's like having a musical companion who always knows how you feel. So, let's dive in together!** ")
+
 
 RTC_CONFIGURATION = RTCConfiguration(
     {"iceServers": [{
