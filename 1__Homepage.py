@@ -120,7 +120,7 @@ background-size: cover;
 background-position: top left;
 background-repeat: no-repeat;
 background-attachment: local;
- background-color: #9771EB;
+background: linear-gradient(45deg, #6f42c1, #e0b2f0);
 color: #ffffff; 
 }
 

@@ -41,18 +41,7 @@ div.stButton > button:first-child {
 
 div.stButton > button:before {
     content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
+background: linear-gradient(45deg, #003057, #4169E1);
   position: absolute;
   top: -2px;
   left: -2px;
