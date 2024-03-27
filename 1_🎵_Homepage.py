@@ -140,7 +140,8 @@ right: 2rem;
 }
 
 [data-testid="stHeader"] h1 {
-    font-family: 'Indie Flower', cursive;
+    # font-family: 'Indie Flower', cursive;
+    color: #ffffff; 
 }
 
 </style>
