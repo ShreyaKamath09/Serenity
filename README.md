@@ -1,4 +1,4 @@
-https://github.com/Mary-ams/Serenity/blob/main/logo1.png?raw=true
+![image](https://github.com/Mary-ams/Serenity/blob/main/logo1.png?raw=true)
 Serenity is an emotion music recommender system that provides a unique and personalized music streaming experience. It utilizes facial emotion detection and a quiz to analyze the user's emotions and recommend songs that match their mood. The application supports streaming from popular platforms such as Spotify, SoundCloud, and YouTube.
 
 ## Features
