@@ -96,11 +96,11 @@ font-size:"30px";
 </style>
 """
 add_logo("logo1.png")
-
 st.markdown(page_bg_img, unsafe_allow_html=True)
-st.title("Serenity-SoundCloud")
+st.title("SERENITY ")
+
 st.markdown(''':white[**Note : It is recommended that you scan your face , for Serenity to groove with you!**]''')
-st.sidebar.success("SoundCloud has been selected as your music player.")
+# st.sidebar.success("SoundCloud has been selected as your music player.")
 
 if "run" not in st.session_state:
     st.write("**Looks like you have skipped the face scan on the homepage and came here, just for music, just choose your vibe manually for Serenity to groove with you!**")

@@ -9,18 +9,18 @@ import xgboost
 
 
 def main():
-    st.title("Mental Health in Tech Industry")
-    st.caption("Experiencing persistent feeling of stress, anxiety, or burnout in your workplace? "
+    st.title("Mental Health for Students!")
+    st.caption("Experiencing persistent feeling of stress, anxiety, or burnout in your university/college? "
                "You came to the right place!")
     st.markdown('---')
-    menu = ['Home', 'About Us']
-    choice = st.sidebar.selectbox("Menu", menu)
+    # menu = ['Quiz']
+    # choice = st.sidebar.selectbox("Menu", menu)
 
-    if choice == 'Home':
-        st.subheader('Take a Test, you might need some help!')
+    # if choice == 'Quiz':
+    st.subheader('Take a Test, you might need some help!')
         # show_form = st.button("Start the test!")
         # if show_form:
-        columns = ['Age', 'Gender', 'Self_Employed',
+    columns = ['Age', 'Gender', 'Self_Employed',
                    'Family_History',
                    'Work_Interference', 'Employees_Num', 'Remote_Working',
                    'Technology_Company', 'Company_Benefits', 'Healthcare_Options',
@@ -28,53 +28,39 @@ def main():
                    'Mental_Consequence', 'Physical_Consequence', 'Discuss_Coworkers',
                    'Discuss_Supervisor', 'Mental_Interview', 'Physical_Interview',
                    'Mental_VS_Physical', 'Observed_Consequence']
-        df = pd.DataFrame(index=range(1), columns=columns)
+    df = pd.DataFrame(index=range(1), columns=columns)
 
-        with st.form("Form"):
+    with st.form("Form"):
 
             df['Age'] = st.number_input('How old are you?', step=1.0, format='%.0f', min_value=15.0, max_value=100.0)
             df['Gender'] = st.selectbox('What is your gender?', ['Female', 'Male', 'Others'])
-            df['Self_Employed'] = st.selectbox('Are you self-employed?', ['Yes', 'No'])
-            df['Family_History'] = st.selectbox('Do your family members have mental illness history?', ['No', 'Yes'])
-            df['Work_Interference'] = st.select_slider('If you have a mental health condition, do you feel '
-                                                       'that it interferes with your work?',
+            df['Self_Employed'] = st.selectbox('Are you currently working a job in addition to your studies?', ['Yes', 'No'])
+            df['Family_History'] = st.selectbox('Do any of your close family members have a history of mental illness?', ['No', 'Yes'])
+            df['Work_Interference'] = st.select_slider('How often do you feel stressed out about schoolwork or deadlines lately?',
                                                        options=['Never', 'Rarely', 'Sometimes', 'Often'])
-            df['Employees_Num'] = st.select_slider('How may employees does your company/organisation have?',
+            df['Employees_Num'] = st.select_slider('How many students are in your class?',
                                        ['1-5', '6-25', '26-100', '100-500', '500-1000', 'More than 1000'])
-            df['Remote_Working'] = st.selectbox('Are you working remotely? (At least 50% of the time)', ['No', 'Yes'])
-            df['Technology_Company'] = st.selectbox('Is your employer primarily a tech company/organisation',
+            df['Remote_Working'] = st.selectbox('Are you taking most of your classes online? (At least 50% of the time)', ['No', 'Yes'])
+            df['Technology_Company'] = st.selectbox('Do you feel your mental health is impacting your academic performance?',
                                                     ['No', 'Yes'])
-            df['Company_Benefits'] = st.selectbox('Does your employer provide mental health benefits?',
+            df['Company_Benefits'] = st.selectbox('Do you feel you have a good network of supportive friends at school?',
                                                   ['No', 'Yes', 'Don\'t know'])
-            df['Healthcare_Options'] = st.selectbox('Do you know the options for mental health care your employer '
-                                                    'provides?', ['No', 'Yes', 'Not Sure'])
-            df['Wellness_Program'] = st.selectbox('Has your employer ever discussed mental health as part of '
-                                                  'an employee wellness program?', ['No', 'Yes', 'Don\'t know'])
-            df['Resources'] = st.selectbox('Does your employer provide resources to learn more about mental health '
-                                           'issues and how to seek help?', ['No', 'Yes', 'Don\'t know'])
-            df['Anonymity'] = st.selectbox('Is your anonymity protected if you choose to take advantage of mental '
-                                           'health or substance abuse treatment resources?', ['No', 'Yes', 'Don\'t know'])
-            df['Medical_Leave'] = st.select_slider('How easy is it for you to take medical leave for a mental health '
-                                                   'condition?', options=['Very Easy', 'Somewhat Easy', 'Don\'t Know',
+            df['Healthcare_Options'] = st.selectbox('Do you get enough sleep most nights (7-8 hours)?' , ['No', 'Yes', 'Not Sure'])
+            df['Wellness_Program'] = st.selectbox(' Do you feel comfortable spending time socializing with classmates outside of class?', ['No', 'Yes', 'Don\'t know'])
+            df['Resources'] = st.selectbox('Do you participate in activities or hobbies outside of school that you enjoy?', ['No', 'Yes', 'Don\'t know'])
+            df['Anonymity'] = st.selectbox('Do you frequently feel anxious?', ['No', 'Yes', 'Don\'t know'])
+            df['Medical_Leave'] = st.select_slider('How easy do you find it to talk to a teacher or professor about academic challenges?', options=['Very Easy', 'Somewhat Easy', 'Don\'t Know',
                                                                           'Somewhat Difficult', 'Very Difficult'])
-            df['Mental_Consequence'] = st.selectbox('Do you think that discussing a mental health issue with your '
-                                                    'employer would have negative consequences?',
+            df['Mental_Consequence'] = st.selectbox('Do you feel like you have enough time to relax and de-stress each day?',
                                                     ['No', 'Yes', 'Maybe'])
-            df['Physical_Consequence'] = st.selectbox('Do you think that discussing a physical health issue with your '
-                                                      'employer would have negative consequences?', ['No', 'Yes',
+            df['Physical_Consequence'] = st.selectbox('Would you be comfortable discussing a stressful situation with your classmates? ', ['No', 'Yes',
                                                                                                      'Maybe'])
-            df['Discuss_Coworkers'] = st.selectbox('Would you be willing to discuss a mental health issue with your '
-                                                   'coworkers?', ['No', 'Yes', 'Some of them'])
-            df['Discuss_Supervisor'] = st.selectbox('Would you be willing to discuss a mental health issue with your '
-                                                    'direct supervisor(s)?', ['No', 'Yes', 'Some of them'])
-            df['Mental_Interview'] = st.selectbox('Would you bring up a mental health issue with a potential employer '
-                                                  'in an interview?', ['No', 'Yes', 'Maybe'])
-            df['Physical_Interview'] = st.selectbox('Would you bring up a physical health issue with a potential '
-                                                    'employer in an interview?', ['No', 'Yes', 'Maybe'])
-            df['Mental_VS_Physical'] = st.selectbox('Do you feel that your employer takes mental health as seriously '
-                                                    'as physical health?', ['No', 'Yes', 'Don\'t Know'])
-            df['Observed_Consequence'] = st.selectbox('Have you heard of or observed negative consequences for '
-                                                      'coworkers with mental health conditions in your workplace?',
+            df['Discuss_Coworkers'] = st.selectbox('Would you consider mentioning that you prioritize mental health during a college interview? ', ['No', 'Yes', 'Some of them'])
+            df['Discuss_Supervisor'] = st.selectbox('Do you ever feel worse about yourself after spending time on social media? ', ['No', 'Yes', 'Some of them'])
+            df['Mental_Interview'] = st.selectbox('Do you feel pressure from your family to succeed academically?', ['No', 'Yes', 'Maybe'])
+            df['Physical_Interview'] = st.selectbox('Do you feel stressed about your current financial situation?', ['No', 'Yes', 'Maybe'])
+            df['Mental_VS_Physical'] = st.selectbox('Do you generally feel optimistic about your ability to manage stress and mental health challenges?', ['No', 'Yes', 'Don\'t Know'])
+            df['Observed_Consequence'] = st.selectbox('Do you worry about what others might think if you seek help for your mental health?',
                                                       ['No', 'Yes'])
 
             submit_button = st.form_submit_button("Submit")
@@ -152,8 +138,8 @@ def main():
 
                 st.write('You are fine!' if prediction < 0.5 else 'You need some treatment.')
                 st.write(msg)
-    else:
-        st.subheader('About Us')
+    # else:
+    #     st.subheader('About Us')
 
 
 if __name__ == '__main__':

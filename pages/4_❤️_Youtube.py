@@ -93,12 +93,14 @@ right: 2rem;
 </style>
 """
 add_logo("logo1.png")
-
 st.markdown(page_bg_img, unsafe_allow_html=True)
-st.title("Serenity-Youtube")
+st.title("SERENITY ")
+
+# st.markdown(page_bg_img, unsafe_allow_html=True)
+# st.title("Serenity-Youtube")
 st.markdown(''':white[**Note : It is recommended that you scan your face , for Serenity to groove with you!**]''')
 
-st.sidebar.success("Youtube has been selected as your music player.")
+# st.sidebar.success("Youtube has been selected as your music player.")
 
 
 

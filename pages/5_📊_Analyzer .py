@@ -113,11 +113,8 @@ right: 2rem;
 </style>
 """
 add_logo("logo1.png")
-
 st.markdown(page_bg_img, unsafe_allow_html=True)
-
-st.header('Analyzer & Recommender 📊')
-
+st.title("SERENITY ")
 
 search_choices = ['Song/Track', 'Artist']
 search_selected = st.sidebar.selectbox("Your search choice please: ", search_choices)

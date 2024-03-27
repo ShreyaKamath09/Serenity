@@ -34,15 +34,14 @@ def main():
 
             df['Age'] = st.number_input('How old are you?', step=1.0, format='%.0f', min_value=15.0, max_value=100.0)
             df['Gender'] = st.selectbox('What is your gender?', ['Female', 'Male', 'Others'])
-            df['Self_Employed'] = st.selectbox('Are you self-employed?', ['Yes', 'No'])
+            df['Self_Employed'] = st.selectbox('Are you currently employed (part time/full time)?', ['Yes', 'No'])
             df['Family_History'] = st.selectbox('Do your family members have mental illness history?', ['No', 'Yes'])
-            df['Work_Interference'] = st.select_slider('If you have a mental health condition, do you feel '
-                                                       'that it interferes with your work?',
+            df['Work_Interference'] = st.select_slider('How often do you feel stressed out lately?',
                                                        options=['Never', 'Rarely', 'Sometimes', 'Often'])
-            df['Employees_Num'] = st.select_slider('How may employees does your company/organisation have?',
+            df['Employees_Num'] = st.select_slider('How many classmates do you have?',
                                        ['1-5', '6-25', '26-100', '100-500', '500-1000', 'More than 1000'])
-            df['Remote_Working'] = st.selectbox('Are you working remotely? (At least 50% of the time)', ['No', 'Yes'])
-            df['Technology_Company'] = st.selectbox('Is your employer primarily a tech company/organisation',
+            df['Remote_Working'] = st.selectbox('Are you attending classes remotely? (At least 50% of the time)', ['No', 'Yes'])
+            df['Technology_Company'] = st.selectbox('Do you feel your mental health is impacting your academic performance?',
                                                     ['No', 'Yes'])
             df['Company_Benefits'] = st.selectbox('Does your employer provide mental health benefits?',
                                                   ['No', 'Yes', 'Don\'t know'])

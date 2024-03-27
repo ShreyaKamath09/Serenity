@@ -91,12 +91,14 @@ right: 2rem;
 }
 </style>
 """
-add_logo("https://github.com/NebulaTris/Serenity/blob/main/logo.png?raw=true")
+add_logo("logo1.png")
+st.markdown(page_bg_img, unsafe_allow_html=True)
+st.title("SERENITY ")
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 st.title("Serenity-Spotify ")
 st.markdown(''':white[**Note : It is recommended that you scan your face , for Serenity to groove with you!**]''')
-st.sidebar.success("Spotify has been selected as your music player.")
+# st.sidebar.success("Spotify has been selected as your music player.")
 
 
 if "run" not in st.session_state:
