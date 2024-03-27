@@ -173,13 +173,12 @@ drawing = mp.solutions.drawing_utils
 if "run" not in st.session_state:
     st.session_state["run"] = ""
 
-run = np.load("emotion.npy")[0]
+run = np.load("emotion.npy", allow_pickle=True)[0]
 
 try:
-    emotion = np.load("emotion.npy")[0]
+    emotion = np.load("emotion.npy", allow_pickle=True)[0]
 except:
     emotion = ""
-
     
 class EmotionProcessor(VideoProcessorBase):
     def recv(self, frame: av.VideoFrame) -> av.VideoFrame:
