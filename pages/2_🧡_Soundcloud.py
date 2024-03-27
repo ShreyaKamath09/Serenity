@@ -73,11 +73,7 @@ div.stButton > button:active::after {
 }
 
 [data-testid="stAppViewContainer"] {
-background-image: url("https://images.unsplash.com/photo-1592838890225-2c052fa0cf34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
-background-size: cover;
-background-position: top left;
-background-repeat: no-repeat;
-background-attachment: local;
+background: linear-gradient(120deg, #ff8800, #ff3300);
 }
 
 [data-testid="stSidebar"] > div:first-child {
@@ -94,18 +90,20 @@ background: rgba(0,0,0,0);
 [data-testid="stToolbar"] {
 right: 2rem;
 }
+[data-testid="stSelectbox"]{
+font-size:"30px";
+}
 </style>
 """
-add_logo("https://github.com/NebulaTris/vibescape/blob/main/logo.png?raw=true")
+add_logo("logo1.png")
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
-st.title("🧡 Vibescape-Soundcloud")
-st.markdown(''':orange[**Note : It is recommended that you scan your face , for Vibescape to groove with you!**]''')
-st.sidebar.success("Soundcloud has been selected as your music player.")
-st.sidebar.text("Developed by Shambhavi")
+st.title("Serenity-SoundCloud")
+st.markdown(''':white[**Note : It is recommended that you scan your face , for Serenity to groove with you!**]''')
+st.sidebar.success("SoundCloud has been selected as your music player.")
 
 if "run" not in st.session_state:
-    st.write("**Looks like you have skipped the face scan on the homepage and came here, just for music, just choose your vibe manually for Vibescape to groove with you!**")
+    st.write("**Looks like you have skipped the face scan on the homepage and came here, just for music, just choose your vibe manually for Serenity to groove with you!**")
     option = st.selectbox(
     'What''s your vibe today?',
     ('Happy', 'Sad', 'Angry','Fear','Surprise','Neutral'))
