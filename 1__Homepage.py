@@ -88,8 +88,6 @@ div.stButton > button:after {
   width: 35px;
   height: 35px;
   background: #ffffff15;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   border-radius: 50px;
 }
 
