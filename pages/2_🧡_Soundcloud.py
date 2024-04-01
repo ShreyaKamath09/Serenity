@@ -95,7 +95,7 @@ font-size:"30px";
 """
 add_logo("logo1.png")
 st.markdown(page_bg_img, unsafe_allow_html=True)
-st.title("SERENITY ")
+st.title("Serenity-Soundcloud")
 
 st.markdown(''':white[**Note : It is recommended that you scan your face , for Serenity to groove with you!**]''')
 # st.sidebar.success("SoundCloud has been selected as your music player.")
@@ -128,11 +128,11 @@ with col1:
         if st.session_state["emotion"] == "Happy":
             st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
         elif st.session_state["emotion"] == "Sad":
-           st_player("https://soundcloud.com/aryan-ambuj-752291555/sets/sad-hindi-songs-a-little")
+           st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
         elif st.session_state["emotion"] == "Angry":
             st_player("https://soundcloud.com/user-905375441/sets/hindi-rap-songs")
         elif st.session_state["emotion"] == "Fear":
-            st_player("https://soundcloud.com/narendraswapnil/sets/aavirbhaav-a-hindi-horror")
+            st_player("https://soundcloud.com/soothingrelaxation/calm-piano-music-soothing-music-for-studying-relaxation-or-sleeping-nighttime?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing")
         elif st.session_state["emotion"] == "Surprise":
             st_player("https://soundcloud.com/maryam-zeb-592867892/sets/hot-hindi-hits-2010-2020")
         elif st.session_state["emotion"] == "Neutral":
@@ -145,12 +145,11 @@ with col1:
         if st.session_state["emotion"] == "Happy":
             st_player("https://soundcloud.com/h-a-i/sets/bengali-songs")
         elif st.session_state["emotion"] == "Sad":
-           st_player("https://soundcloud.com/rechna-begum/sets/bengali-songs")
+           st_player("https://soundcloud.com/h-a-i/sets/bengali-songs")
         elif st.session_state["emotion"] == "Angry":
             st_player("https://soundcloud.com/dj-aryan-music")
         elif st.session_state["emotion"] == "Fear":
-            st.write("No such playlist found , hence default playlist is being played.")
-            st_player("https://soundcloud.com/mushera-khandaker-1/sets/bengali-songs")
+            st_player("https://soundcloud.com/soothingrelaxation/calm-piano-music-soothing-music-for-studying-relaxation-or-sleeping-nighttime?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing")
         elif st.session_state["emotion"] == "Surprise":
             st_player("https://soundcloud.com/mushera-khandaker-1/sets/bengali-songs")
         elif st.session_state["emotion"] == "Neutral":
@@ -163,12 +162,11 @@ with col1:
         if st.session_state["emotion"] == "Happy":
             st_player("https://soundcloud.com/mahesh-gaikwad-301342141/sets/dj-marathi-song")
         elif st.session_state["emotion"] == "Sad":
-           st_player("https://soundcloud.com/ghostblogger/break-up-ke-baad-marathi-song")
+           st_player("https://soundcloud.com/mahesh-gaikwad-301342141/sets/dj-marathi-song")
         elif st.session_state["emotion"] == "Angry":
             st_player("https://soundcloud.com/sandip-vadde-915668005/sets/marathi-rap")
         elif st.session_state["emotion"] == "Fear":
-            st.write("No such playlist found , hence default playlist is being played.")
-            st_player("https://soundcloud.com/shrawan-paradkar/sets/marathi-songs")
+            st_player("https://soundcloud.com/soothingrelaxation/calm-piano-music-soothing-music-for-studying-relaxation-or-sleeping-nighttime?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing")
         elif st.session_state["emotion"] == "Surprise":
             st_player("https://soundcloud.com/mahesh-gaikwad-301342141/sets/dj-marathi-song")
         elif st.session_state["emotion"] == "Neutral":
@@ -182,11 +180,11 @@ with col2:
         if st.session_state["emotion"] == "Happy":
             st_player("https://soundcloud.com/gabriela-astudillo-398435247/sets/happy-english-music")
         elif st.session_state["emotion"] == "Sad":
-           st_player("https://soundcloud.com/jishnu-rajwani-695997535/sets/famous-english-sad-songs-of")
+           st_player("https://soundcloud.com/gabriela-astudillo-398435247/sets/happy-english-music")
         elif st.session_state["emotion"] == "Angry":
             st_player("https://soundcloud.com/thomashayden/sets/tech-house-vibes-only")
         elif st.session_state["emotion"] == "Fear":
-            st_player("https://soundcloud.com/tito-tito-675324717/sets/horror-english")
+            st_player("https://soundcloud.com/soothingrelaxation/calm-piano-music-soothing-music-for-studying-relaxation-or-sleeping-nighttime?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing")
         elif st.session_state["emotion"] == "Surprise":
             st_player("https://soundcloud.com/manea-claudia/sets/top-love-songs-2022-playlist-1")
         elif st.session_state["emotion"] == "Neutral":
@@ -199,11 +197,11 @@ with col2:
         if st.session_state["emotion"] == "Happy":
             st_player("https://soundcloud.com/danyal-safir/sets/punjabi-party-songs-2022")
         elif st.session_state["emotion"] == "Sad":
-           st_player("https://soundcloud.com/tania-tania-658084779/sets/best-punjabi-sad-songs-2023")
+           st_player("https://soundcloud.com/danyal-safir/sets/punjabi-party-songs-2022")
         elif st.session_state["emotion"] == "Angry":
             st_player("https://soundcloud.com/jas-singh-31/sets/gym-punjabi-playlist")
         elif st.session_state["emotion"] == "Fear":
-            st_player("https://soundcloud.com/user-94762183/timmy-trumpet-punjabi-x-code_pandorum-murda-fvck-riddim-x-horror-noise-ofdts-mashup")
+            st_player("https://soundcloud.com/soothingrelaxation/calm-piano-music-soothing-music-for-studying-relaxation-or-sleeping-nighttime?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing")
         elif st.session_state["emotion"] == "Surprise":
             st_player("https://soundcloud.com/itslovesmusic/sets/top-50-punjabi-songs-2022-1")
         elif st.session_state["emotion"] == "Neutral":
@@ -216,12 +214,11 @@ with col2:
         if st.session_state["emotion"] == "Happy":
             st_player("https://soundcloud.com/sumit-indoria/sets/telugu-party-time")
         elif st.session_state["emotion"] == "Sad":
-           st_player("https://soundcloud.com/user-738522704/sets/sad-telugu-songs")
+           st_player("https://soundcloud.com/sumit-indoria/sets/telugu-party-time")
         elif st.session_state["emotion"] == "Angry":
             st_player("https://soundcloud.com/user-692822299/sets/telugu-workout-remix")
         elif st.session_state["emotion"] == "Fear":
-            st.write("No such playlist found , hence default playlist is being played.")
-            st_player("https://soundcloud.com/vinod-kumar-761560211/sets/telugu-songs-regular-update")
+            st_player("https://soundcloud.com/soothingrelaxation/calm-piano-music-soothing-music-for-studying-relaxation-or-sleeping-nighttime?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing")
         elif st.session_state["emotion"] == "Surprise":
             st_player("https://soundcloud.com/vinod-kumar-761560211/sets/telugu-songs-regular-update")
         elif st.session_state["emotion"] == "Neutral":

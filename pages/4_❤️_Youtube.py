@@ -92,10 +92,9 @@ right: 2rem;
 """
 add_logo("logo1.png")
 st.markdown(page_bg_img, unsafe_allow_html=True)
-st.title("SERENITY ")
+st.title("Serenity-Youtube")
 
 # st.markdown(page_bg_img, unsafe_allow_html=True)
-# st.title("Serenity-Youtube")
 st.markdown(''':white[**Note : It is recommended that you scan your face , for Serenity to groove with you!**]''')
 
 # st.sidebar.success("Youtube has been selected as your music player.")
@@ -130,11 +129,11 @@ with col1:
         if st.session_state["emotion"] == "Happy":
             st_player("https://www.youtube.com/watch?v=OcmcptbsvzQ")
         elif st.session_state["emotion"] == "Sad":
-           st_player("https://www.youtube.com/watch?v=e6LMUGrN57A")
+           st_player("https://www.youtube.com/watch?v=OcmcptbsvzQ")
         elif st.session_state["emotion"] == "Angry":
             st_player("https://www.youtube.com/playlist?list=PLxNm0dqHxmlupV3dr7uq4Rl8L5nwlGKQA")
         elif st.session_state["emotion"] == "Fear":
-            st_player("https://www.youtube.com/watch?v=8joIt7wsayU")
+            st_player("https://www.youtube.com/playlist?list=PLFuSiQ0mwHUaC_wfLOPqnlcJJtvaIDfrB")
         elif st.session_state["emotion"] == "Surprise":
             st_player("https://www.youtube.com/watch?v=rtTI1rh9U5M")
         elif st.session_state["emotion"] == "Neutral":
@@ -147,11 +146,11 @@ with col1:
         if st.session_state["emotion"] == "Happy":
             st_player("https://www.youtube.com/playlist?list=PLzxTmXYDR-xXsilCSwT-Bds5w96k2GOXF")
         elif st.session_state["emotion"] == "Sad":
-           st_player("https://www.youtube.com/watch?v=RRbqeGr8mJE")
+           st_player("https://www.youtube.com/playlist?list=PLzxTmXYDR-xXsilCSwT-Bds5w96k2GOXF")
         elif st.session_state["emotion"] == "Angry":
             st_player("https://www.youtube.com/watch?v=_RBlE6Ar8mw")
         elif st.session_state["emotion"] == "Fear":
-            st_player("https://www.youtube.com/watch?v=5PtVfECix1M")
+            st_player("https://www.youtube.com/watch?v=7vplXizS9h4&pp=ygUzYmVuZ2FsaSBzb25ncyB0byBjYWxtIGZlYXIgYW5kIGFueGlldHkgeXQgcGxheWxpc3Rz")
         elif st.session_state["emotion"] == "Surprise":
             st_player("https://www.youtube.com/watch?v=39uMLYTh40Q")
         elif st.session_state["emotion"] == "Neutral":
@@ -164,11 +163,11 @@ with col1:
         if st.session_state["emotion"] == "Happy":
             st_player("https://www.youtube.com/playlist?list=PLN_pFG_Bv6D4-gpRS06J2auY87DQaEDuo")
         elif st.session_state["emotion"] == "Sad":
-           st_player("https://www.youtube.com/playlist?list=PLpjbqr-x3QIpcfrn_McAvi80s5bGuWr9f")
+           st_player("https://www.youtube.com/playlist?list=PLN_pFG_Bv6D4-gpRS06J2auY87DQaEDuo")
         elif st.session_state["emotion"] == "Angry":
             st_player("https://www.youtube.com/playlist?list=PLpjbqr-x3QIpw79fcOQJDi3FdMcYwWZki")
         elif st.session_state["emotion"] == "Fear":
-            st_player("https://soundcloud.com/miss_happy/sets/hindi-songs")
+            st_player("https://www.youtube.com/playlist?list=PLpjbqr-x3QIpJis95WB1TS5FRWb7NuwK3")
         elif st.session_state["emotion"] == "Surprise":
             st_player("https://www.youtube.com/watch?v=imUUogeGUio")
         elif st.session_state["emotion"] == "Neutral":
@@ -182,11 +181,11 @@ with col2:
         if st.session_state["emotion"] == "Happy":
             st_player("https://www.youtube.com/watch?v=ONM4uXLe8CU")
         elif st.session_state["emotion"] == "Sad":
-           st_player("https://www.youtube.com/watch?v=BwleOnML1Fo")
+           st_player("https://www.youtube.com/watch?v=ONM4uXLe8CU")
         elif st.session_state["emotion"] == "Angry":
             st_player("https://www.youtube.com/watch?v=YnezhNgzdss")
         elif st.session_state["emotion"] == "Fear":
-            st_player("https://www.youtube.com/watch?v=G-YNNJIe2Vk")
+            st_player("https://www.youtube.com/watch?v=Agu_oGOZz0A&list=RDHc10febKlX8&start_radio=1")
         elif st.session_state["emotion"] == "Surprise":
             st_player("https://www.youtube.com/watch?v=zStYh2eHOWk")
         elif st.session_state["emotion"] == "Neutral":
@@ -199,12 +198,11 @@ with col2:
         if st.session_state["emotion"] == "Happy":
             st_player("https://www.youtube.com/watch?v=heXb7XQYVKo")
         elif st.session_state["emotion"] == "Sad":
-           st_player("https://www.youtube.com/watch?v=8Jq0E9ryVEc")
+           st_player("https://www.youtube.com/watch?v=heXb7XQYVKo")
         elif st.session_state["emotion"] == "Angry":
             st_player("https://www.youtube.com/watch?v=Pha76iGaauM")
         elif st.session_state["emotion"] == "Fear":
-            st.write("No such playlist found , hence default playlist is being played.")
-            st_player("https://www.youtube.com/watch?v=Id2fc96XPYE")
+            st_player("https://www.youtube.com/playlist?list=PL2tHHVry_QJYbJCb82jPtwxSUOX1UJobg")
         elif st.session_state["emotion"] == "Surprise":
             st_player("https://www.youtube.com/watch?v=Id2fc96XPYE")
         elif st.session_state["emotion"] == "Neutral":
@@ -217,12 +215,11 @@ with col2:
         if st.session_state["emotion"] == "Happy":
             st_player("https://www.youtube.com/playlist?list=PLMpEfaKcGjpWEgNtdnsvLX6LzQL0UC0EM")
         elif st.session_state["emotion"] == "Sad":
-           st_player("https://www.youtube.com/watch?v=yvnsgYQyGXo")
+           st_player("https://www.youtube.com/playlist?list=PLMpEfaKcGjpWEgNtdnsvLX6LzQL0UC0EM")
         elif st.session_state["emotion"] == "Angry":
             st_player("https://www.youtube.com/watch?v=CYj6li9939w")
         elif st.session_state["emotion"] == "Fear":
-            st.write("No such playlist found , hence default playlist is being played.")
-            st_player("https://www.youtube.com/playlist?list=PL4sNEU2Mgm6bNnbM-qKPmTwwDromFqpMQ")
+            st_player("https://www.youtube.com/playlist?list=PLMpEfaKcGjpWEgNtdnsvLX6LzQL0UC0EM")
         elif st.session_state["emotion"] == "Surprise":
             st_player("https://www.youtube.com/watch?v=ADqgenM4uqQ")
         elif st.session_state["emotion"] == "Neutral":

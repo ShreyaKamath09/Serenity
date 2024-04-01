@@ -91,10 +91,9 @@ right: 2rem;
 """
 add_logo("logo1.png")
 st.markdown(page_bg_img, unsafe_allow_html=True)
-st.title("SERENITY ")
+st.title("Serenity: Spotify")
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
-st.title("Serenity-Spotify ")
 st.markdown(''':white[**Note : It is recommended that you scan your face , for Serenity to groove with you!**]''')
 # st.sidebar.success("Spotify has been selected as your music player.")
 
@@ -130,7 +129,7 @@ with col1:
             """,height=600)
         elif st.session_state["emotion"] == "Sad":
            components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXdFesNN9TzXT?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWTwbZHrJRIgD?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
         elif st.session_state["emotion"] == "Angry":
             components.html(
@@ -138,7 +137,7 @@ with col1:
             """,height=600)
         elif st.session_state["emotion"] == "Fear":
             components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7EZ4lWeM1OLxZYfGmhDbJI?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/08laqH1TPcPP4f0pkbJSa2?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>" 
             """,height=600)
         elif st.session_state["emotion"] == "Surprise":
             components.html(
@@ -161,7 +160,7 @@ with col1:
             """,height=600)
         elif st.session_state["emotion"] == "Sad":
            components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/47FrM9FqXeG7l22RZkmoqZ?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6xW5Vg6ItVIcGzpWpLxrkE?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
         elif st.session_state["emotion"] == "Angry":
             components.html(
@@ -169,7 +168,7 @@ with col1:
             """,height=600)
         elif st.session_state["emotion"] == "Fear":
             components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0VCG80o22Fb?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1Gt1bGUTHneUptZtc9Msoi?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
         elif st.session_state["emotion"] == "Surprise":
             components.html(
@@ -192,16 +191,15 @@ with col1:
             """,height=600)
         elif st.session_state["emotion"] == "Sad":
             components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUEPngl1ogec?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4VyXj7QL7tcyJFM4h1wYe7?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
         elif st.session_state["emotion"] == "Angry":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5dKWOIUR0lmN5URKUVpV6a?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
         elif st.session_state["emotion"] == "Fear":
-            st.write("No playlist available for this emotion. Hence default playlist is being played.")
             components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX84EApEEEkUc?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0vccDJJVPeQc2F6hwy4Y4v?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
         elif st.session_state["emotion"] == "Surprise":
             components.html(
@@ -225,7 +223,7 @@ with col2:
             """,height=600)
         elif st.session_state["emotion"] == "Sad":
            components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX7qK8ma5wgG1?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXdPec7aLTmlC?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
         elif st.session_state["emotion"] == "Angry":
             components.html(
@@ -233,7 +231,7 @@ with col2:
             """,height=600)
         elif st.session_state["emotion"] == "Fear":
             components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EIfgYPpPEriFK?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4rIoHGE82kPRFP78nJ4HNG?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
         elif st.session_state["emotion"] == "Surprise":
             components.html(
@@ -252,20 +250,19 @@ with col2:
    if punjabi:
         if st.session_state["emotion"] == "Happy":
             components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX7QeQjujWh9l?utm_source=generator&theme=0 width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX7QeQjujWh9l?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
         elif st.session_state["emotion"] == "Sad":
            components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWfmbQgZIznF?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX7QeQjujWh9l?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
         elif st.session_state["emotion"] == "Angry":
             components.html(
             """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5ecJF7ZFkufISEw6SZdKrB?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
         elif st.session_state["emotion"] == "Fear":
-            st.write("No playlist available for this emotion. Hence default playlist is being played.")
             components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZY9CnWbvq8Q?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/45Mzf4oLd6vksC1cnKdZEM?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
         elif st.session_state["emotion"] == "Surprise":
             components.html(
@@ -288,7 +285,7 @@ with col2:
             """,height=600)
         elif st.session_state["emotion"] == "Sad":
            components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUEWjDsV7AgX?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX2UT3NuRgcHd?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
         elif st.session_state["emotion"] == "Angry":
             components.html(
@@ -296,7 +293,7 @@ with col2:
             """,height=600)
         elif st.session_state["emotion"] == "Fear":
             components.html(
-            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4JVDfzNmjX17JnfjaziVQe?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+            """<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1abCG2GayESKg6BjKLj93w?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             """,height=600)
         elif st.session_state["emotion"] == "Surprise":
             components.html(
